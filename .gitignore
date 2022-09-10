@@ -8,20 +8,20 @@ AC = float(AC)
 
 BC = math.sqrt(AB ** 2 + AC ** 2)
 
-def perimetr(AB,AC):  # создали первую функцию perimetr, в нее передают два числа a и b
+def perimetr(AB,AC):  
   res = (AB+AC)*2
-  return res         # возвращает число
-                     # первая функция закончилась
+  return res         
+                    
 
-def area(AB, AC):      # создали другую функцию area, в нее передают два числа a и b
+def area(AB, AC):      
   res = AB*AC
   return res
 
-p = perimetr(AB, AC)             # результат функции perimetr поместили в переменную p
-print("Периметр = %d" % (p))  # напечатали p (Периметр = 16)
-s = area(AB, AC)                 # результат функции area поместили в переменную s
-print("Площадь = %d" % (s))   # напечатали s (Площадь = 15)
+p = perimetr(AB, AC)            
+print("Периметр = %d" % (p))  
+s = area(AB, AC)               
+print("Площадь = %d" % (s))   
 
-                              # можно сразу печатать результат функции
+                              
 print("Периметр = %d" % (perimetr(AB, AC)))
 print("Площадь = %d" % (area(AB, AC)))
